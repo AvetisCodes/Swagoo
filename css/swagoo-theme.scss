@@ -1,0 +1,341 @@
+@import "natalyacolorformula"; // This is where I am using Natalya Shelburne's Sass color formulas in my work
+@import "mixins";
+@import "variables";
+
+@font-face {
+    font-family: 'Serif';
+    src: url(../fonts/BlackerText-Light.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Sans Serif';
+    src: url(../fonts/Gilroy-Light.otf) format('opentype');
+}
+
+:root {
+    font-family: 'Serif', Fallback, serif;
+    --text-base-size: #{$base-size};
+    --scale: #{$augmented-fourth};
+    --flex-flow: #{$flex-no-wrap};
+    
+    --text-h5-size: calc(var(--text-base-size) * var(--scale));
+    --text-h4-size: calc(var(--text-h5-size) * var(--scale));
+    --text-h3-size: calc(var(--text-h4-size) * var(--scale));
+    --text-h2-size: calc(var(--text-h3-size) * var(--scale));
+    --text-h1-size: calc(var(--text-h2-size) * var(--scale));
+}
+
+@media only screen and (max-width : $phone-size) { 
+    :root {
+        --scale: #{$major-third}; // When it is a phone change the scale to Major Third
+        --flex-flow: #{$flex-wrap};
+    }
+}
+
+.row {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: var(--flex-flow);
+    --columns: 12;
+    justify-content: space-between;
+}
+
+/* Mobile first - grid system */
+.col-1-1,
+.col-1-2,
+.col-1-3,
+.col-2-3,
+.col-1-4,
+.col-3-4,
+.col-1-5,
+.col-4-5,
+.col-1-6,
+.col-5-6 {
+    --width: 12;
+    padding: 10px;
+    
+   background-color: $primary-neutral-light;
+   flex-basis: calc(var(--width, 0) / var(--columns, 12) * 100%);
+   @include box-shadow(2px,2px,5px,0, $primary-neutral);
+}
+
+
+/* Tablet screen sizes - grid system */
+@media screen and (min-width: $tablet-size-start) and (max-width: $tablet-size-end) {
+    
+    .col-5-6,
+    .col-4-5,
+    .col-1-5,
+    .col-3-4,
+    .col-1-4,
+    .col-1-3,
+    .col-2-3,
+    .col-1-1,
+    .col-1-2,
+    .col-1-6 {
+        --width: 12;
+    }
+
+    :root {
+        --flex-flow: #{$flex-wrap};
+    }
+}
+
+/* Desktop screen sizes - grid system */
+@media only screen and (min-width: $desktop-size) {
+    
+    .col-1-1 {
+        --width: 12;
+    }
+
+    .col-1-2 {
+        --width: 6;
+    }
+
+    .col-1-3 {
+        --width: 4;
+    }
+
+    .col-2-3 {
+        --width: 8;
+    }
+
+    .col-1-4 {
+        --width: 3;
+    }
+
+    .col-3-4 {
+        --width: 9;
+    }
+
+    .col-1-5 {
+        --width: 2.4;
+    }
+
+    .col-4-5 {
+        --width: 9.6;
+    }
+
+    .col-1-6 {
+        --width: 2;
+    }
+
+    .col-5-6 {
+        --width: 10;
+    }
+
+    :root {
+        --flex-flow: #{$flex-no-wrap};
+    }
+}
+
+/*
+*
+* COMPONENTS
+*
+*/
+
+// Card
+div.swagoo-card {
+    @include box-shadow(2px,2px,5px,0, $primary-neutral);
+    background-color: rgba($primary-neutral, 0.1);
+    width: 20rem;
+    
+    div.swagoo-card-header {
+        @extend h5;
+
+        padding: 10px;
+        text-transform: uppercase;
+        color: $primary-neutral-dark;
+        text-align: center;
+    }
+
+    div.swagoo-card-body {
+        padding: 10px;
+        color: $primary-neutral-dark;
+        font-family: 'Serif', Fallback, serif;
+    }
+
+    div.swagoo-card-footer {
+        border-top: 1px dotted $neutral-gray;
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+// Texts
+h1, h2, h3, h4, h5 {
+    font-family: 'Sans Serif', Fallback, sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: var(--text-h1-size);
+}
+
+h2 {
+    font-size: var(--text-h2-size);
+}
+
+h3 {
+    font-size: var(--text-h3-size);
+}
+
+h4 {
+    font-size: var(--text-h4-size);
+}
+
+h5 {
+    font-size: var(--text-h5-size);
+}
+
+// Table
+// TODO: Make my table responsive
+table.swagoo-table {
+
+    th, td {
+        @include box-shadow(2px,2px,5px,0, $primary-neutral);
+        
+        padding: 10px;
+        border: 1px solid black;
+    }
+    
+    thead {
+        background-color: $analogous-color;
+        color: $white;
+    }
+
+    tbody {
+        background-color: rgba($complementary-neutral-light, 0.3);
+        color: $primary-neutral-dark;
+    }
+
+    tfoot {
+        background-color: rgba($complementary-neutral, 0.3);
+        color: $white;
+    }
+}
+
+//TODO: Figure out the margins
+//TODO: Look into units of measurmenets and figure out which one is better to be used
+// Jumbotron
+div.swagoo-jumbotron {
+
+    @include box-shadow(2px,2px,5px,0, $primary-neutral);
+    background-color: rgba($primary-neutral, 0.1);
+
+    div.swagoo-jumbotron-title {
+        @extend h3;
+
+        padding: 50px 10px 10px 10px;
+        text-transform: uppercase;
+        color: $primary-neutral-dark;
+        text-align: center;
+    }
+
+    div.swagoo-jumbotron-subtitle {
+        @extend h5;
+
+        margin: 20px;
+        color: $primary-neutral-dark;
+        font-family: 'Serif', Fallback, serif;
+    }
+
+    div.swagoo-jumbotron-action {
+        border-top: 1px dotted $neutral-gray;
+        margin: 20px;
+        padding: 10px 0px 50px 0px;
+    }
+}
+
+// Forms
+
+// -- Button
+.btn {
+    @include box-shadow(1px,1px,1px,0, $primary-neutral);
+
+    background-color: $complementary-light;
+    color: $white;
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px;
+    font-size: var(--text-base-size);
+    cursor: pointer;
+
+    &:hover {
+        background-color: $complementary-color; 
+    }
+}
+
+a.swagoo-btn {
+    @extend .btn;
+    &:link,
+    &:visited,
+    &:hover,
+    &:active {
+        text-decoration: none;
+    }
+}
+
+// TODO: Improve the button file upload - https://blog.benestudio.co/custom-file-upload-button-with-pure-css-5aacf39aa0a
+button.swagoo-btn,
+input[type="button"].swagoo-btn,
+input[type="submit"].swagoo-btn,
+input[type="reset"].swagoo-btn,
+input[type="file"].swagoo-btn {
+    @extend .btn;
+    font-family: 'Serif', Fallback, serif;
+}
+
+// -- Input Types
+// input[type="checkbox"].swagoo-txt,
+input[type="color"].swagoo-txt,
+input[type="date"].swagoo-txt,
+input[type="datetime-local"].swagoo-txt,
+input[type="email"].swagoo-txt,
+input[type="hidden"].swagoo-txt,
+input[type="month"].swagoo-txt,
+input[type="number"].swagoo-txt,
+input[type="password"].swagoo-txt,
+// input[type="radio"].swagoo-txt,
+// input[type="range"].swagoo-txt, TODO: See if I can or want to style the range
+input[type="search"].swagoo-txt,
+input[type="tel"].swagoo-txt,
+input[type="text"].swagoo-txt,
+input[type="time"].swagoo-txt,
+input[type="url"].swagoo-txt,
+input[type="week"].swagoo-txt {
+    @include box-shadow(1px,1px,1px,0, $primary-neutral);
+    font-family: 'Sans Serif';
+    background-color: $complementary-neutral-light;
+    border: 1px solid $neutral-gray;
+    height: 1.5rem;
+    margin: 10px;
+    padding: 5px;
+}
+
+textarea.swagoo-txt{
+    @include box-shadow(1px,1px,1px,0, $primary-neutral);
+    font-family: 'Sans Serif';
+    background-color: $complementary-neutral-light;
+    border: 1px solid $neutral-gray;
+    margin: 10px;
+    padding: 5px;
+}
+
+// -- Label
+label {
+    font-family: 'Sans Serif';
+    margin-right: 10px;
+}
+
+// -- Image
+img.swagoo-img {
+
+}
+
+img.swagoo-thumbnail- img {
+    
+}

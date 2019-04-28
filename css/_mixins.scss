@@ -1,0 +1,6 @@
+// https://stackoverflow.com/questions/48538980/how-to-create-a-mixin-for-css-dropshadow
+@mixin box-shadow($top, $left, $blur, $size, $color) {
+    -webkit-box-shadow: $top $left $blur $size $color;
+    -moz-box-shadow: $top $left $blur $size $color;
+    box-shadow: $top $left $blur $size $color;
+}
