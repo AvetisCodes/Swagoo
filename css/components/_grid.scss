@@ -1,0 +1,96 @@
+.row {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: var(--flex-flow);
+    --columns: 12;
+    justify-content: space-between;
+}
+
+/* Mobile first - grid system */
+.col-1-1,
+.col-1-2,
+.col-1-3,
+.col-2-3,
+.col-1-4,
+.col-3-4,
+.col-1-5,
+.col-4-5,
+.col-1-6,
+.col-5-6 {
+    --width: 12;
+    padding: 10px;
+    
+   flex-basis: calc(var(--width, 0) / var(--columns, 12) * 100%);
+}
+
+
+/* Tablet screen sizes - grid system */
+@media screen and (min-width: $tablet-size-start) and (max-width: $tablet-size-end) {
+    
+    .col-5-6,
+    .col-4-5,
+    .col-1-5,
+    .col-3-4,
+    .col-1-4,
+    .col-1-3,
+    .col-2-3,
+    .col-1-1,
+    .col-1-2,
+    .col-1-6 {
+        --width: 12;
+    }
+
+    :root {
+        --flex-flow: #{$flex-wrap};
+    }
+}
+
+/* Desktop screen sizes - grid system */
+@media only screen and (min-width: $desktop-size) {
+    
+    .col-1-1 {
+        --width: 12;
+    }
+
+    .col-1-2 {
+        --width: 6;
+    }
+
+    .col-1-3 {
+        --width: 4;
+    }
+
+    .col-2-3 {
+        --width: 8;
+    }
+
+    .col-1-4 {
+        --width: 3;
+    }
+
+    .col-3-4 {
+        --width: 9;
+    }
+
+    .col-1-5 {
+        --width: 2.4;
+    }
+
+    .col-4-5 {
+        --width: 9.6;
+    }
+
+    .col-1-6 {
+        --width: 2;
+    }
+
+    .col-5-6 {
+        --width: 10;
+    }
+
+    :root {
+        --flex-flow: #{$flex-no-wrap};
+    }
+}

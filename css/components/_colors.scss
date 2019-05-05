@@ -3,11 +3,11 @@
 //Pick a color
 
 // THIS IS SET IN THE THEME FILE AT THE TOP LEVEL
-$first-color: hsl(132, 93%, 52%);
+$swagoo-seed-color:	hsla(211, 100%, 50%, 1) !default;
 
 // Find the complement
 
-$second-color: complement($first-color);
+$second-color: complement($swagoo-seed-color);
 
 //Check if you have a cool color on your hands. Cool colors will overpower warm colors when mixing.
 
@@ -98,8 +98,8 @@ $second-color: complement($first-color);
 	}
 }
 
-$primary-color: harmonious-mix($second-color, $first-color);
-$complementary-color: harmonious-mix($first-color, $second-color);
+$primary-color: harmonious-mix($second-color, $swagoo-seed-color);
+$complementary-color: harmonious-mix($swagoo-seed-color, $second-color);
 
 $analogous-color: adjust-hue($complementary-color, -40);
 $complementary-analogous: mix($analogous-color, $complementary-color, 66);

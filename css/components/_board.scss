@@ -1,0 +1,30 @@
+//TODO: Figure out the margins
+//TODO: Look into units of measurmenets and figure out which one is better to be used
+// Board
+div.swagoo-board {
+
+    background-color: rgba($primary-neutral, 0.1);
+    padding: 1rem;
+    
+    div.swagoo-board-title {
+        @extend h3;
+
+        text-transform: uppercase;
+        color: $primary-neutral-dark;
+        text-align: center;
+
+    }
+
+    div.swagoo-board-subtitle {
+        @extend h5;
+
+        margin: 20px;
+        color: $primary-neutral-dark;
+        font-family: 'Serif', Fallback, serif;
+    }
+
+    div.swagoo-board-action {
+        border-top: 1px dotted $neutral-gray;
+        padding-top: 1rem; // TODO: Figure out how to make this point it towards the bottom instead of towards the top
+    }
+}

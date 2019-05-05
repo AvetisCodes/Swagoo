@@ -1,0 +1,35 @@
+h1, h2, h3, h4, h5, p {
+    font-family: 'Sans Serif', Fallback, sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-weight: bold;
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+h5, p {
+    font-weight: 400;
+}
+
+h1 {
+    font-size: var(--text-h1-size);
+}
+
+h2 {
+    font-size: var(--text-h2-size);
+}
+
+h3 {
+    font-size: var(--text-h3-size);
+}
+
+h4 {
+    font-size: var(--text-h4-size);
+}
+
+h5 {
+    font-size: var(--text-h5-size);
+}

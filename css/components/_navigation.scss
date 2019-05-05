@@ -1,0 +1,39 @@
+nav.swagoo-nav {
+    
+    border-bottom: 2px solid $complementary-gray;
+
+    ul.swagoo-link-group {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: $primary-neutral-dark;
+    }
+      
+    li.swagoo-link {
+        float: left;
+        width: 7rem;
+    }
+    
+    li.swagoo-link a {
+        display: block;
+        color: $white;
+        text-align: center;
+        padding: 1rem;
+        text-decoration: none;
+    }
+
+    li.swagoo-link.active a {
+        display: block;
+        color: $white;
+        font-weight: bold;
+        text-align: center;
+        padding: 1rem;
+        text-decoration: none;
+        background-color: $complementary-gray;
+    }
+    
+    li.swagoo-link a:hover {
+        background-color: $neutral-gray;
+    }
+}

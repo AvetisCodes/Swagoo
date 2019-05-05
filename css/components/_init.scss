@@ -1,0 +1,24 @@
+@import "./layouts";
+@import "./fonts";
+@import "./colors";
+
+:root {
+    font-family: 'Serif', Fallback, serif;
+
+    --text-base-size: #{$base-size};
+    --scale: #{$augmented-fourth};
+    --flex-flow: #{$flex-no-wrap};
+    
+    --text-h5-size: calc(var(--text-base-size) * var(--scale));
+    --text-h4-size: calc(var(--text-h5-size) * var(--scale));
+    --text-h3-size: calc(var(--text-h4-size) * var(--scale));
+    --text-h2-size: calc(var(--text-h3-size) * var(--scale));
+    --text-h1-size: calc(var(--text-h2-size) * var(--scale));
+}
+
+@media only screen and (max-width : $phone-size) { 
+    :root {
+        --scale: #{$major-third}; // When it is a phone change the scale to Major Third
+        --flex-flow: #{$flex-wrap};
+    }
+}

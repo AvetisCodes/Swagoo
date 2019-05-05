@@ -1,0 +1,9 @@
+// Horizontal line
+// Credit: Got my idea from https://www.arclab.com/en/kb/htmlcss/how-to-cross-browser-style-hr-horizontal-rule-line-using-css.html
+hr {
+    height: 1px;
+    border: none;
+    margin: 10px 0;
+    color: $primary-neutral-light; 
+    background-color: $primary-neutral-light;
+}

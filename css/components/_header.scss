@@ -1,0 +1,16 @@
+header.swagoo-header {
+    padding: 8rem;
+    margin: 0;
+    background-color: $primary-color;
+
+    div.swagoo-header-title {
+        @extend h2;
+        color: $white;
+        margin: 0 0 1rem 0;
+    }
+
+    div.swagoo-header-subtitle {
+        @extend h5;
+        color: $primary-neutral-light;
+    }
+}

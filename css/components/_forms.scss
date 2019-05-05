@@ -1,0 +1,69 @@
+.btn {
+    border-radius: .5rem;
+    background-color: $primary-color;
+    color: $white;
+    border: 1px solid;
+    font-size: var(--text-base-size);
+    font-family: 'Serif', Fallback, serif;
+    padding: .5rem 1.5rem;
+
+    cursor: pointer;
+    
+    &:hover {
+        background-color: $complementary-color; 
+    }
+}
+
+a.swagoo-btn {
+    @extend .btn;
+    &:link,
+    &:visited,
+    &:hover,
+    &:active {
+        text-decoration: none;
+    }
+
+    display: inline-block;
+}
+
+button.swagoo-btn,
+input[type="button"].swagoo-btn,
+input[type="submit"].swagoo-btn,
+input[type="reset"].swagoo-btn {
+    @extend .btn;
+}
+
+input[type="color"].swagoo-txt,
+input[type="date"].swagoo-txt,
+input[type="datetime-local"].swagoo-txt,
+input[type="email"].swagoo-txt,
+input[type="hidden"].swagoo-txt,
+input[type="month"].swagoo-txt,
+input[type="number"].swagoo-txt,
+input[type="password"].swagoo-txt,
+input[type="search"].swagoo-txt,
+input[type="tel"].swagoo-txt,
+input[type="text"].swagoo-txt,
+input[type="time"].swagoo-txt,
+input[type="url"].swagoo-txt,
+input[type="week"].swagoo-txt {
+    font-family: 'Sans Serif';
+    background-color: $complementary-neutral-light;
+    border: 1px solid $neutral-gray;
+    height: 1.5rem;
+    // margin: 10px;
+    // padding: 5px;
+}
+
+textarea.swagoo-txt {
+    font-family: 'Sans Serif';
+    background-color: $complementary-neutral-light;
+    border: 1px solid $neutral-gray;
+    // margin: 10px;
+    // padding: 5px;
+}
+
+label {
+    font-family: 'Sans Serif';
+    // margin-right: 10px;
+}

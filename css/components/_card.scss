@@ -1,0 +1,26 @@
+div.swagoo-card {
+    background-color: rgba($primary-neutral, 0.1);
+    border-radius: .5rem;
+    
+    div.swagoo-card-header {
+        @extend h5;
+
+        padding: 10px;
+        text-transform: uppercase;
+        color: $primary-neutral-dark;
+        text-align: center;
+    }
+
+    div.swagoo-card-body {
+        padding: 10px;
+        color: $primary-neutral-dark;
+        background-color: $white;
+        font-family: 'Serif', Fallback, serif;
+        text-align: center;
+    }
+
+    div.swagoo-card-footer {
+        padding: 10px;
+        text-align: center;
+    }
+}
