@@ -364,6 +364,16 @@ div.swagoo-card div.swagoo-card-footer {
   text-align: center;
 }
 
+code {
+  color: #f9fafb;
+}
+
+.swagoo-snippet {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: gray;
+}
+
 table.swagoo-table th, table.swagoo-table td {
   padding: 10px;
   border: 1px solid black;
