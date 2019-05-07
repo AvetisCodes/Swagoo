@@ -1,20 +1,21 @@
+/* 
+    Credit: Checkbox as an image idea got from this post: https://stackoverflow.com/questions/3772273/pure-css-checkbox-image-replacement
+    Credit: Checkbox toggling content based on its state got from this post: https://codepen.io/anon/pen/eaYrEb 
+*/
+
+/* Mobile/Tablet First */
 nav.swagoo-nav {
     
-    border-bottom: 2px solid $complementary-gray;
+    border: none ;
+    background-color: $primary-neutral-dark;
 
     ul.swagoo-link-group {
         list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
-        background-color: $primary-neutral-dark;
     }
       
-    li.swagoo-link {
-        float: left;
-        width: 7rem;
-    }
-    
     li.swagoo-link a {
         display: block;
         color: $white;
@@ -36,4 +37,89 @@ nav.swagoo-nav {
     li.swagoo-link a:hover {
         background-color: $neutral-gray;
     }
+
+    input[type=checkbox] {
+        display:none;
+    }
+        
+    input[type=checkbox] + label.swagoo-burger,
+    input[type=checkbox]:checked + label.swagoo-burger
+    {
+        cursor: pointer;
+        display: inline-block;
+        padding: 0 10px;
+    }
+
+    input[type=checkbox] + label.swagoo-burger:before {
+        content: '\00d7';
+        color: $white;
+        font-size: 40px;
+    }
+
+    input[type=checkbox]:checked + label.swagoo-burger:before {
+        content: '\2630';
+        color: $white;
+        font-size: 35px;
+    }
+
+    input[type=checkbox]:checked ~ ul.swagoo-link-group {
+        display: none;
+    }
 }
+
+/* Desktop screen size - grid system */
+@media screen and (min-width: $desktop-size) {
+    
+    nav.swagoo-nav {
+    
+        border-bottom: 2px solid $complementary-gray;
+        background-color: $primary-neutral-dark;
+
+        ul.swagoo-link-group {
+            display: block;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+          
+        li.swagoo-link {
+            float: left;
+            width: 7rem;
+        }
+        
+        li.swagoo-link a {
+            display: block;
+            color: $white;
+            text-align: center;
+            padding: 1rem;
+            text-decoration: none;
+        }
+    
+        li.swagoo-link.active a {
+            display: block;
+            color: $white;
+            font-weight: bold;
+            text-align: center;
+            padding: 1rem;
+            text-decoration: none;
+            background-color: $complementary-gray;
+        }
+        
+        li.swagoo-link a:hover {
+            background-color: $neutral-gray;
+        }
+    
+        input[type=checkbox],
+        input[type=checkbox] + label.swagoo-burger,
+        input[type=checkbox]:checked + label.swagoo-burger
+        {
+            display: none;
+        }
+
+        input[type=checkbox]:checked ~ ul.swagoo-link-group {
+            display: block;
+        }
+    }
+}
+    

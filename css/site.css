@@ -30,16 +30,16 @@
 header.swagoo-header {
   padding: 8rem;
   margin: 0;
-  background-color: #3b7dc4;
+  background-color: #8942c0;
 }
 
 header.swagoo-header div.swagoo-header-title {
-  color: #f9fafb;
+  color: #fcfbfc;
   margin: 0 0 1rem 0;
 }
 
 header.swagoo-header div.swagoo-header-subtitle {
-  color: #cbd3dd;
+  color: #d6cbdf;
 }
 
 h1, h2, header.swagoo-header div.swagoo-header-title, h3, div.swagoo-board div.swagoo-board-title, h4, h5, header.swagoo-header div.swagoo-header-subtitle, div.swagoo-card div.swagoo-card-header, div.swagoo-board div.swagoo-board-subtitle, p {
@@ -85,7 +85,7 @@ h5, header.swagoo-header div.swagoo-header-subtitle, div.swagoo-card div.swagoo-
 /* Mobile/Tablet First */
 nav.swagoo-nav {
   border: none;
-  background-color: #222b34;
+  background-color: #2e2238;
 }
 
 nav.swagoo-nav ul.swagoo-link-group {
@@ -97,7 +97,7 @@ nav.swagoo-nav ul.swagoo-link-group {
 
 nav.swagoo-nav li.swagoo-link a {
   display: block;
-  color: #f9fafb;
+  color: #fcfbfc;
   text-align: center;
   padding: 1rem;
   text-decoration: none;
@@ -105,16 +105,16 @@ nav.swagoo-nav li.swagoo-link a {
 
 nav.swagoo-nav li.swagoo-link.active a {
   display: block;
-  color: #f9fafb;
+  color: #fcfbfc;
   font-weight: bold;
   text-align: center;
   padding: 1rem;
   text-decoration: none;
-  background-color: #a5815a;
+  background-color: #7ca260;
 }
 
 nav.swagoo-nav li.swagoo-link a:hover {
-  background-color: gray;
+  background-color: #818181;
 }
 
 nav.swagoo-nav input[type=checkbox] {
@@ -130,13 +130,13 @@ nav.swagoo-nav input[type=checkbox]:checked + label.swagoo-burger {
 
 nav.swagoo-nav input[type=checkbox] + label.swagoo-burger:before {
   content: '\00d7';
-  color: #f9fafb;
+  color: #fcfbfc;
   font-size: 40px;
 }
 
 nav.swagoo-nav input[type=checkbox]:checked + label.swagoo-burger:before {
   content: '\2630';
-  color: #f9fafb;
+  color: #fcfbfc;
   font-size: 35px;
 }
 
@@ -147,8 +147,8 @@ nav.swagoo-nav input[type=checkbox]:checked ~ ul.swagoo-link-group {
 /* Desktop screen size - grid system */
 @media screen and (min-width: 900px) {
   nav.swagoo-nav {
-    border-bottom: 2px solid #a5815a;
-    background-color: #222b34;
+    border-bottom: 2px solid #7ca260;
+    background-color: #2e2238;
   }
   nav.swagoo-nav ul.swagoo-link-group {
     display: block;
@@ -163,22 +163,22 @@ nav.swagoo-nav input[type=checkbox]:checked ~ ul.swagoo-link-group {
   }
   nav.swagoo-nav li.swagoo-link a {
     display: block;
-    color: #f9fafb;
+    color: #fcfbfc;
     text-align: center;
     padding: 1rem;
     text-decoration: none;
   }
   nav.swagoo-nav li.swagoo-link.active a {
     display: block;
-    color: #f9fafb;
+    color: #fcfbfc;
     font-weight: bold;
     text-align: center;
     padding: 1rem;
     text-decoration: none;
-    background-color: #a5815a;
+    background-color: #7ca260;
   }
   nav.swagoo-nav li.swagoo-link a:hover {
-    background-color: gray;
+    background-color: #818181;
   }
   nav.swagoo-nav input[type=checkbox],
   nav.swagoo-nav input[type=checkbox] + label.swagoo-burger,
@@ -195,8 +195,8 @@ input.swagoo-btn[type="button"],
 input.swagoo-btn[type="submit"],
 input.swagoo-btn[type="reset"] {
   border-radius: .5rem;
-  background-color: #3b7dc4;
-  color: #f9fafb;
+  background-color: #8942c0;
+  color: #fcfbfc;
   border: 1px solid;
   font-size: var(--text-base-size);
   font-family: 'Serif', Fallback, serif;
@@ -208,7 +208,7 @@ input.swagoo-btn[type="reset"] {
 input.swagoo-btn:hover[type="button"],
 input.swagoo-btn:hover[type="submit"],
 input.swagoo-btn:hover[type="reset"] {
-  background-color: #e3831c;
+  background-color: #75db27;
 }
 
 a.swagoo-btn {
@@ -234,15 +234,15 @@ input[type="time"].swagoo-txt,
 input[type="url"].swagoo-txt,
 input[type="week"].swagoo-txt {
   font-family: 'Sans Serif';
-  background-color: #edd5bb;
-  border: 1px solid gray;
+  background-color: #d3e5c5;
+  border: 1px solid #818181;
   height: 1.5rem;
 }
 
 textarea.swagoo-txt {
   font-family: 'Sans Serif';
-  background-color: #edd5bb;
-  border: 1px solid gray;
+  background-color: #d3e5c5;
+  border: 1px solid #818181;
 }
 
 label {
@@ -340,21 +340,21 @@ label {
 }
 
 div.swagoo-card {
-  background-color: rgba(101, 127, 154, 0.1);
+  background-color: rgba(133, 99, 159, 0.1);
   border-radius: .5rem;
 }
 
 div.swagoo-card div.swagoo-card-header {
   padding: 10px;
   text-transform: uppercase;
-  color: #222b34;
+  color: #2e2238;
   text-align: center;
 }
 
 div.swagoo-card div.swagoo-card-body {
   padding: 10px;
-  color: #222b34;
-  background-color: #f9fafb;
+  color: #2e2238;
+  background-color: #fcfbfc;
   font-family: 'Serif', Fallback, serif;
   text-align: center;
 }
@@ -370,39 +370,39 @@ table.swagoo-table th, table.swagoo-table td {
 }
 
 table.swagoo-table thead {
-  background-color: #7ca4cf;
-  color: #f9fafb;
+  background-color: #ac80ce;
+  color: #fcfbfc;
 }
 
 table.swagoo-table tbody {
-  background-color: rgba(203, 211, 221, 0.3);
-  color: #222b34;
+  background-color: rgba(214, 203, 223, 0.3);
+  color: #2e2238;
 }
 
 table.swagoo-table tfoot {
-  background-color: rgba(101, 127, 154, 0.3);
-  color: #2b2b2b;
+  background-color: rgba(133, 99, 159, 0.3);
+  color: #2d2d2d;
 }
 
 div.swagoo-board {
-  background-color: rgba(101, 127, 154, 0.1);
+  background-color: rgba(133, 99, 159, 0.1);
   padding: 1rem;
 }
 
 div.swagoo-board div.swagoo-board-title {
   text-transform: uppercase;
-  color: #222b34;
+  color: #2e2238;
   text-align: center;
 }
 
 div.swagoo-board div.swagoo-board-subtitle {
   margin: 20px;
-  color: #222b34;
+  color: #2e2238;
   font-family: 'Serif', Fallback, serif;
 }
 
 div.swagoo-board div.swagoo-board-action {
-  border-top: 1px dotted gray;
+  border-top: 1px dotted #818181;
   padding-top: 1rem;
 }
 
@@ -410,12 +410,12 @@ hr {
   height: 1px;
   border: none;
   margin: 10px 0;
-  color: #cbd3dd;
-  background-color: #cbd3dd;
+  color: #d6cbdf;
+  background-color: #d6cbdf;
 }
 
 div.bordered {
-  border: 1px solid #cbd3dd;
+  border: 1px solid #d6cbdf;
 }
 
 div.swagoo-container {
@@ -444,9 +444,9 @@ body {
 footer.swagoo-footer {
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  background-color: #222b34;
-  color: #f9fafb;
+  background-color: #2e2238;
+  color: #fcfbfc;
   padding: 3rem;
   text-align: center;
 }
-/*# sourceMappingURL=swagoo-theme.css.map */
+/*# sourceMappingURL=site.css.map */

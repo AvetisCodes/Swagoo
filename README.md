@@ -1,2 +1,2 @@
 # Swagoo
-Another responsive design framework but with some funky swagger.
+Mobile-First Responsive Design Framework With Small Footprint & Funky Swag.
