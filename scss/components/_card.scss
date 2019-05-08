@@ -17,6 +17,11 @@ div.swagoo-card {
         background-color: $white;
         font-family: 'Serif', Fallback, serif;
         text-align: center;
+
+        &.rounded {
+            border-bottom-left-radius: .5rem;
+            border-bottom-right-radius: .5rem;
+        }
     }
 
     div.swagoo-card-footer {

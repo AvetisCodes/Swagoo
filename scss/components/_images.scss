@@ -1,7 +1,10 @@
 img.swagoo-img {
-
+    border-radius: 8px;
 }
 
-img.swagoo-thumbnail-img {
-    
+img.swagoo-img-thumbnail {
+    border: 1px solid $primary-neutral-light;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
 }
