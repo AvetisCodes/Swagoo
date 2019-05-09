@@ -452,6 +452,11 @@ div.swagoo-board div.swagoo-board-subtitle {
   font-family: 'Serif', Fallback, serif;
 }
 
+div.swagoo-board div.swagoo-board-subtitle.rounded {
+  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+}
+
 div.swagoo-board div.swagoo-board-action {
   border-top: 1px dotted gray;
   padding-top: 1rem;

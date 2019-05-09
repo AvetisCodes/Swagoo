@@ -22,6 +22,11 @@ div.swagoo-board {
         margin: 20px;
         color: $primary-neutral-dark;
         font-family: 'Serif', Fallback, serif;
+
+        &.rounded {
+            border-bottom-left-radius: .5rem;
+            border-bottom-right-radius: .5rem;
+        }
     }
 
     div.swagoo-board-action {

@@ -434,27 +434,8 @@ code {
   background-color: #818181;
 }
 
-div.swagoo-table table th, div.swagoo-table table td {
-  padding: 10px;
-  border: 1px solid black;
-}
-
-div.swagoo-table table thead {
-  background-color: #ac80ce;
-  color: #fcfbfc;
-}
-
-div.swagoo-table table tbody {
-  background-color: rgba(214, 203, 223, 0.3);
-  color: #2e2238;
-}
-
-div.swagoo-table table tfoot {
-  background-color: rgba(133, 99, 159, 0.3);
-  color: #2d2d2d;
-}
-
 div.swagoo-board {
+  border-radius: 8px;
   background-color: rgba(133, 99, 159, 0.1);
   padding: 1rem;
 }
@@ -469,6 +450,11 @@ div.swagoo-board div.swagoo-board-subtitle {
   margin: 20px;
   color: #2e2238;
   font-family: 'Serif', Fallback, serif;
+}
+
+div.swagoo-board div.swagoo-board-subtitle.rounded {
+  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
 }
 
 div.swagoo-board div.swagoo-board-action {
