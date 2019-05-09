@@ -1,2 +1,2 @@
 # Swagoo
-Mobile-First Responsive Design Framework With Small Footprint & Funky Swag.
+Mobile-First Responsive Design Framework With Pure CSS & Funky Swag.
