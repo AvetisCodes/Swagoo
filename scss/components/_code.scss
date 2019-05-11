@@ -1,9 +1,15 @@
-code {
-    color: $white;
-}
-
 .swagoo-snippet {
     padding: 10px;
     border-radius: 5px;
     background-color: $neutral-gray;
+}
+
+code {
+    color: $white;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: justify;
 }

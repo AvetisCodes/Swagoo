@@ -424,14 +424,20 @@ div.swagoo-card div.swagoo-card-footer {
   text-align: center;
 }
 
-code {
-  color: #f9fafb;
-}
-
 .swagoo-snippet {
   padding: 10px;
   border-radius: 5px;
   background-color: gray;
+}
+
+code {
+  color: #f9fafb;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  text-align: justify;
 }
 
 div.swagoo-board {
@@ -477,6 +483,39 @@ div.swagoo-container {
   width: 80%;
   margin: 0 auto 3rem;
   padding: auto;
+}
+
+/* Mobile first - grid system */
+.swagoo-element-show-on-mobile {
+  visibility: visible;
+}
+
+.swagoo-element-hide-on-mobile {
+  visibility: hidden;
+}
+
+/* Tablet screen sizes - grid system */
+@media screen and (min-width: 500px) and (max-width: 900px) {
+  .swagoo-element-show-on-tablet {
+    visibility: visible;
+  }
+  .swagoo-element-show-on-desktop,
+  .swagoo-element-show-on-mobile,
+  .swagoo-element-hide-on-tablet {
+    visibility: hidden;
+  }
+}
+
+/* Desktop screen sizes - grid system */
+@media only screen and (min-width: 900px) {
+  .swagoo-element-show-on-desktop {
+    visibility: visible;
+  }
+  .swagoo-element-show-on-tablet,
+  .swagoo-element-show-on-mobile,
+  .swagoo-element-hide-on-desktop {
+    visibility: hidden;
+  }
 }
 
 html, body {

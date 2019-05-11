@@ -1,0 +1,34 @@
+/* Mobile first - grid system */
+.swagoo-element-show-on-mobile {
+    visibility: visible;
+}
+
+.swagoo-element-hide-on-mobile {
+    visibility: hidden;
+}
+
+/* Tablet screen sizes - grid system */
+@media screen and (min-width: $tablet-size-start) and (max-width: $tablet-size-end) {
+    .swagoo-element-show-on-tablet {
+        visibility: visible;
+    }
+
+    .swagoo-element-show-on-desktop,
+    .swagoo-element-show-on-mobile,
+    .swagoo-element-hide-on-tablet {
+        visibility: hidden;
+    }
+}
+
+/* Desktop screen sizes - grid system */
+@media only screen and (min-width: $desktop-size) {
+    .swagoo-element-show-on-desktop {
+        visibility: visible;
+    }
+
+    .swagoo-element-show-on-tablet,
+    .swagoo-element-show-on-mobile,
+    .swagoo-element-hide-on-desktop {
+        visibility: hidden;
+    }
+}
