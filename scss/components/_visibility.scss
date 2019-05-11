@@ -1,34 +1,75 @@
 /* Mobile first - grid system */
-.swagoo-element-show-on-mobile {
-    visibility: visible;
-}
+@media only screen and (max-width: $phone-size) {
+ 
+    .swagoo-show-inline-on-desktop,
+    .swagoo-show-block-on-desktop,
+    .swagoo-show-inline-block-on-desktop,
+    .swagoo-show-inline-on-tablet,
+    .swagoo-show-block-on-tablet,
+    .swagoo-show-inline-block-on-tablet {
+        display: none;
+    }
+    
+    .swagoo-show-inline-on-mobile {
+        display: inline;
+    }
 
-.swagoo-element-hide-on-mobile {
-    visibility: hidden;
+    .swagoo-show-block-on-mobile {
+        display: block;
+    }
+
+    .swagoo-show-inline-block-on-mobile {
+        display: inline-block;
+    }
 }
 
 /* Tablet screen sizes - grid system */
-@media screen and (min-width: $tablet-size-start) and (max-width: $tablet-size-end) {
-    .swagoo-element-show-on-tablet {
-        visibility: visible;
+@media only screen and (min-width: $tablet-size-start) and (max-width: $tablet-size-end)   {
+
+    .swagoo-show-inline-on-desktop,
+    .swagoo-show-block-on-desktop,
+    .swagoo-show-inline-block-on-desktop,
+    .swagoo-show-inline-on-mobile,
+    .swagoo-show-block-on-mobile,
+    .swagoo-show-inline-block-on-mobile {
+        display: none;
+    }
+   
+    .swagoo-show-inline-on-tablet {
+        display: inline;
     }
 
-    .swagoo-element-show-on-desktop,
-    .swagoo-element-show-on-mobile,
-    .swagoo-element-hide-on-tablet {
-        visibility: hidden;
+    .swagoo-show-block-on-tablet {
+        display: block;
+    }
+
+    .swagoo-show-inline-block-on-tablet {
+        display: inline-block;
     }
 }
 
+
 /* Desktop screen sizes - grid system */
 @media only screen and (min-width: $desktop-size) {
-    .swagoo-element-show-on-desktop {
-        visibility: visible;
+    
+    .swagoo-show-inline-on-tablet,
+    .swagoo-show-block-on-tablet,
+    .swagoo-show-inline-block-on-tablet,
+    .swagoo-show-inline-on-mobile,
+    .swagoo-show-block-on-mobile,
+    .swagoo-show-inline-block-on-mobile {
+        display: none;
+    }
+    
+    .swagoo-show-inline-on-desktop {
+        display: inline;
     }
 
-    .swagoo-element-show-on-tablet,
-    .swagoo-element-show-on-mobile,
-    .swagoo-element-hide-on-desktop {
-        visibility: hidden;
+    .swagoo-show-block-on-desktop {
+        display: block;
+    }
+
+    .swagoo-show-inline-block-on-desktop {
+        display: inline-block;
     }
 }
