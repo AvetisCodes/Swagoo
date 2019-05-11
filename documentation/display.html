@@ -50,7 +50,11 @@
                 <p>
                     For example: If you want elementA to be shown on mobile you will add the show class to it. Once you do elementA will ONLY be shown on mobile. If you
                     decide you would like to show it on a tablet as well then you add another class for a tablet. Lastly, if you want it to be shown on all 3 types
-                    of decides you could add the third class which would show it on the desktop, however an easier way is to not put any visibility classes at all.
+                    of devices - you could add the third class (for desktop in our case), however an easier way is not to put any visibility classes at all.
+                </p>
+
+                <p>
+                    Lastly, you have choices on how you would like to display your elements - block, inline or inline-block.
                 </p>
 
                 <p>
@@ -65,14 +69,117 @@
 <pre>                    
     <code>
         
+        &#x3C;div class=&#x22;row&#x22;&#x3E;
+            &#x3C;div class=&#x22;col-1-1&#x22;&#x3E;
+                &#x3C;h4 class=&#x22;swagoo-show-block-on-desktop&#x22;&#x3E;Shown on desktop only as a block.&#x3C;/h4&#x3E;
+                &#x3C;span class=&#x22;swagoo-show-block-on-desktop&#x22;&#x3E;Content after it to demonstrate the block display.&#x3C;/span&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
 
-        
+        &#x3C;div class=&#x22;row&#x22;&#x3E;
+            &#x3C;div class=&#x22;col-1-1&#x22;&#x3E;
+                &#x3C;h4 class=&#x22;swagoo-show-block-on-tablet&#x22;&#x3E;Shown on tablet only as a block.&#x3C;/h4&#x3E;
+                &#x3C;span class=&#x22;swagoo-show-block-on-tablet&#x22;&#x3E;Content after it to demonstrate the block display.&#x3C;/span&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+
+        &#x3C;div class=&#x22;row&#x22;&#x3E;
+            &#x3C;div class=&#x22;col-1-1&#x22;&#x3E;
+                &#x3C;h4 class=&#x22;swagoo-show-block-on-mobile&#x22;&#x3E;Shown on mobile only as a block.&#x3C;/h4&#x3E;
+                &#x3C;span class=&#x22;swagoo-show-block-on-mobile&#x22;&#x3E;Content after it to demonstrate the block display.&#x3C;/span&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+
+        &#x3C;div class=&#x22;row&#x22;&#x3E;
+            &#x3C;div class=&#x22;col-1-1&#x22;&#x3E;
+                &#x3C;h4 class=&#x22;swagoo-show-block-on-mobile swagoo-show-block-on-tablet&#x22;&#x3E;Shown on mobile and tablet only as a block.&#x3C;/h4&#x3E;
+                &#x3C;span class=&#x22;swagoo-show-block-on-mobile swagoo-show-block-on-tablet&#x22;&#x3E;Content after it to demonstrate the block display.&#x3C;/span&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+
+        &#x3C;div class=&#x22;row&#x22;&#x3E;
+            &#x3C;div class=&#x22;col-1-1&#x22;&#x3E;
+                &#x3C;h4 class=&#x22;swagoo-show-block-on-mobile swagoo-show-block-on-desktop&#x22;&#x3E;Shown on mobile and desktop only as a block.&#x3C;/h4&#x3E;
+                &#x3C;span class=&#x22;swagoo-show-block-on-mobile swagoo-show-block-on-desktop&#x22;&#x3E;Content after it to demonstrate the block display.&#x3C;/span&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+
+        &#x3C;div class=&#x22;row&#x22;&#x3E;
+            &#x3C;div class=&#x22;col-1-1&#x22;&#x3E;
+                &#x3C;h4 class=&#x22;swagoo-show-inline-on-mobile swagoo-show-inline-on-desktop&#x22;&#x3E;Shown on mobile and desktop only as inline.&#x3C;/h4&#x3E;
+                &#x3C;span class=&#x22;swagoo-show-inline-on-mobile swagoo-show-inline-on-desktop&#x22;&#x3E;Content after it to demonstrate the inline display.&#x3C;/span&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+
+        &#x3C;div class=&#x22;row&#x22;&#x3E;
+            &#x3C;div class=&#x22;col-1-1&#x22;&#x3E;
+                &#x3C;h4 class=&#x22;swagoo-show-inline-block-on-mobile swagoo-show-inline-block-on-desktop&#x22;&#x3E;Shown on mobile and desktop only as inline-block.&#x3C;/h4&#x3E;
+                &#x3C;span class=&#x22;swagoo-show-inline-block-on-mobile swagoo-show-inline-block-on-desktop&#x22;&#x3E;Content after it to demonstrate the inline-block display.&#x3C;/span&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+
     </code>
 </pre>
                 </div>
             </div>
         </div>
-            
+
+        <div class="row">
+            <div class="col-1-1">
+                <p>Below you can see how the HTML code above gets displayed on the browser - if you change the size of your window you will see how different elements
+                    get displayed at different breakpoints.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1-1">
+                <h4 class="swagoo-show-block-on-desktop">Shown on desktop only as a block.</h4>
+                <span class="swagoo-show-block-on-desktop">Content after it to demonstrate the block display.</span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1-1">
+                <h4 class="swagoo-show-block-on-tablet">Shown on tablet only as a block.</h4>
+                <span class="swagoo-show-block-on-tablet">Content after it to demonstrate the block display.</span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1-1">
+                <h4 class="swagoo-show-block-on-mobile">Shown on mobile only as a block.</h4>
+                <span class="swagoo-show-block-on-mobile">Content after it to demonstrate the block display.</span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1-1">
+                <h4 class="swagoo-show-block-on-mobile swagoo-show-block-on-tablet">Shown on mobile and tablet only as a block.</h4>
+                <span class="swagoo-show-block-on-mobile swagoo-show-block-on-tablet">Content after it to demonstrate the block display.</span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1-1">
+                <h4 class="swagoo-show-block-on-mobile swagoo-show-block-on-desktop">Shown on mobile and desktop only as a block.</h4>
+                <span class="swagoo-show-block-on-mobile swagoo-show-block-on-desktop">Content after it to demonstrate the block display.</span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1-1">
+                <h4 class="swagoo-show-inline-on-mobile swagoo-show-inline-on-desktop">Shown on mobile and desktop only as inline.</h4>
+                <span class="swagoo-show-inline-on-mobile swagoo-show-inline-on-desktop">Content after it to demonstrate the inline display.</span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1-1">
+                <h4 class="swagoo-show-inline-block-on-mobile swagoo-show-inline-block-on-desktop">Shown on mobile and desktop only as inline-block.</h4>
+                <span class="swagoo-show-inline-block-on-mobile swagoo-show-inline-block-on-desktop">Content after it to demonstrate the inline-block display.</span>
+            </div>
+        </div>
+
     </div>
 
     <footer class="swagoo-footer">
