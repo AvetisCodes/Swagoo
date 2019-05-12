@@ -51,10 +51,6 @@ header.swagoo-header div.swagoo-header-subtitle {
   color: #cbd3dd;
 }
 
-a {
-  color: #3b7dc4;
-}
-
 h1, h2, header.swagoo-header div.swagoo-header-title, h3, div.swagoo-board div.swagoo-board-title, h4, h5, header.swagoo-header div.swagoo-header-subtitle, div.swagoo-card div.swagoo-card-header, div.swagoo-board div.swagoo-board-subtitle, p {
   font-family: 'Sans Serif', Fallback, sans-serif;
 }
