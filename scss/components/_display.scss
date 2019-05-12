@@ -1,5 +1,5 @@
 
-/* Mobile first - grid system */
+/* Mobile first */
 @media only screen  {
  
     .swagoo-show-inline-on-desktop,
@@ -24,7 +24,7 @@
     }
 }
 
-/* Tablet screen sizes - grid system */
+/* Tablet screen sizes */
 @media only screen and (min-width: $tablet-size) {
 
     .swagoo-show-inline-on-desktop,
@@ -50,7 +50,7 @@
 }
 
 
-/* Desktop screen sizes - grid system */
+/* Desktop screen sizes */
 @media only screen and (min-width: $desktop-size) {
     
     .swagoo-show-inline-on-tablet,

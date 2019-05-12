@@ -8,8 +8,21 @@ code {
     color: $white;
 }
 
-pre {
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    text-align: justify;
+/* Mobile/Tablet First */
+@media only screen, (min-width: $tablet-size) {
+    pre {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        text-align: center;
+    }
 }
+
+/* Desktop screen size */
+@media only screen and (min-width: $desktop-size) {
+    pre {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        text-align: justify;
+    }
+}
+

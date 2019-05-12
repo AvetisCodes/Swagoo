@@ -1,15 +1,15 @@
-/* Mobile first - grid system */
+.row {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: var(--flex-flow);
+    --columns: 12;
+    justify-content: space-between;
+}
+
+/* Mobile first */
 @media only screen  {
-    .row {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-flow: var(--flex-flow);
-        --columns: 12;
-        justify-content: space-between;
-    }
-    
     .col-1-1,
     .col-1-2,
     .col-1-3,
@@ -41,7 +41,7 @@
 }
 
 
-/* Tablet screen sizes - grid system */
+/* Tablet screen sizes */
 @media only screen and (min-width: $tablet-size) {
     
     .col-5-6,
@@ -62,7 +62,7 @@
     }
 }
 
-/* Desktop screen sizes - grid system */
+/* Desktop screen sizes */
 @media only screen and (min-width: $desktop-size) {
     
     .col-1-1 {

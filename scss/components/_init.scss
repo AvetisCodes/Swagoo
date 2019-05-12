@@ -6,8 +6,8 @@
     font-family: 'Serif', Fallback, serif;
 
     --text-base-size: #{$base-size};
-    --scale: #{$large-device-font-size};
-    --flex-flow: #{$flex-no-wrap};
+    --scale: #{$small-device-font-size};
+    --flex-flow: #{$flex-wrap};
     
     --text-h5-size: calc(var(--text-base-size) * var(--scale));
     --text-h4-size: calc(var(--text-h5-size) * var(--scale));
@@ -16,9 +16,19 @@
     --text-h1-size: calc(var(--text-h2-size) * var(--scale));
 }
 
-@media only screen and (max-width : 500px) { 
+/* Mobile First */
+@media only screen  {
     :root {
         --scale: #{$small-device-font-size};
         --flex-flow: #{$flex-wrap};
+    }
+}
+
+
+/* Desktop and Tablet screen size */
+@media only screen and (min-width: $tablet-size) , (min-width: $desktop-size) {
+    :root {
+        --scale: #{$large-device-font-size};
+        --flex-flow: #{$flex-no-wrap};
     }
 }

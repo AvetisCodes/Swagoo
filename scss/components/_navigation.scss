@@ -3,8 +3,7 @@
     Credit: Checkbox toggling content based on its state got from this post: https://codepen.io/anon/pen/eaYrEb 
 */
 
-/* Mobile/Tablet First */
-
+/* Mobile First */
 @media only screen  {
     nav.swagoo-nav {
         
@@ -70,7 +69,7 @@
     }
 }
 
-/* Desktop screen size - grid system */
+/* Desktop and Tablet screen size */
 @media only screen and (min-width: $tablet-size) , (min-width: $desktop-size) {
     
     nav.swagoo-nav {
