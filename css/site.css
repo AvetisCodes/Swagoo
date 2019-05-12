@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'Serif';
-  src: url(../fonts/BlackerText-Light.otf) format("opentype");
+  src: url(../../fonts/BlackerText-Light.otf) format("opentype");
 }
 
 @font-face {
   font-family: 'Sans Serif';
-  src: url(../fonts/Gilroy-Light.otf) format("opentype");
+  src: url(../../fonts/Gilroy-Light.otf) format("opentype");
 }
 
 :root {
@@ -20,7 +20,7 @@
   --text-h1-size: calc(var(--text-h2-size) * var(--scale));
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   :root {
     --scale: 1.25;
     --flex-flow: row wrap;
@@ -40,6 +40,10 @@ header.swagoo-header div.swagoo-header-title {
 
 header.swagoo-header div.swagoo-header-subtitle {
   color: #d6cbdf;
+}
+
+a {
+  color: #8942c0;
 }
 
 h1, h2, header.swagoo-header div.swagoo-header-title, h3, div.swagoo-board div.swagoo-board-title, h4, h5, header.swagoo-header div.swagoo-header-subtitle, div.swagoo-card div.swagoo-card-header, div.swagoo-board div.swagoo-board-subtitle, p {
@@ -83,69 +87,62 @@ h5, header.swagoo-header div.swagoo-header-subtitle, div.swagoo-card div.swagoo-
     Credit: Checkbox toggling content based on its state got from this post: https://codepen.io/anon/pen/eaYrEb 
 */
 /* Mobile/Tablet First */
-nav.swagoo-nav {
-  border: none;
-  background-color: #2e2238;
-}
-
-nav.swagoo-nav ul.swagoo-link-group {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-nav.swagoo-nav li.swagoo-link a {
-  display: block;
-  color: #fcfbfc;
-  text-align: center;
-  padding: 1rem;
-  text-decoration: none;
-}
-
-nav.swagoo-nav li.swagoo-link.active a {
-  display: block;
-  color: #fcfbfc;
-  font-weight: bold;
-  text-align: center;
-  padding: 1rem;
-  text-decoration: none;
-  background-color: #7ca260;
-}
-
-nav.swagoo-nav li.swagoo-link a:hover {
-  background-color: #818181;
-}
-
-nav.swagoo-nav input[type=checkbox] {
-  display: none;
-}
-
-nav.swagoo-nav input[type=checkbox] + label.swagoo-burger,
-nav.swagoo-nav input[type=checkbox]:checked + label.swagoo-burger {
-  cursor: pointer;
-  display: inline-block;
-  padding: 0 10px;
-}
-
-nav.swagoo-nav input[type=checkbox] + label.swagoo-burger:before {
-  content: '\00d7';
-  color: #fcfbfc;
-  font-size: 40px;
-}
-
-nav.swagoo-nav input[type=checkbox]:checked + label.swagoo-burger:before {
-  content: '\2630';
-  color: #fcfbfc;
-  font-size: 35px;
-}
-
-nav.swagoo-nav input[type=checkbox]:checked ~ ul.swagoo-link-group {
-  display: none;
+@media only screen {
+  nav.swagoo-nav {
+    border: none;
+    background-color: #2e2238;
+  }
+  nav.swagoo-nav ul.swagoo-link-group {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  nav.swagoo-nav li.swagoo-link a {
+    display: block;
+    color: #fcfbfc;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+  }
+  nav.swagoo-nav li.swagoo-link.active a {
+    display: block;
+    color: #fcfbfc;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    background-color: #7ca260;
+  }
+  nav.swagoo-nav li.swagoo-link a:hover {
+    background-color: #818181;
+  }
+  nav.swagoo-nav input[type=checkbox] {
+    display: none;
+  }
+  nav.swagoo-nav input[type=checkbox] + label.swagoo-burger,
+  nav.swagoo-nav input[type=checkbox]:checked + label.swagoo-burger {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 10px;
+  }
+  nav.swagoo-nav input[type=checkbox] + label.swagoo-burger:before {
+    content: '\00d7';
+    color: #fcfbfc;
+    font-size: 40px;
+  }
+  nav.swagoo-nav input[type=checkbox]:checked + label.swagoo-burger:before {
+    content: '\2630';
+    color: #fcfbfc;
+    font-size: 35px;
+  }
+  nav.swagoo-nav input[type=checkbox]:checked ~ ul.swagoo-link-group {
+    display: none;
+  }
 }
 
 /* Desktop screen size - grid system */
-@media screen and (min-width: 800px) {
+@media only screen and (min-width: 767px), (min-width: 1000px) {
   nav.swagoo-nav {
     border-bottom: 2px solid #7ca260;
     background-color: #2e2238;
@@ -264,82 +261,81 @@ img.swagoo-img-thumbnail {
   width: 150px;
 }
 
-.row {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: var(--flex-flow);
-          flex-flow: var(--flex-flow);
-  --columns: 12;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 /* Mobile first - grid system */
-.col-1-1,
-.col-1-2,
-.col-1-3,
-.col-2-3,
-.col-1-4,
-.col-3-4,
-.col-1-5,
-.col-4-5,
-.col-1-6,
-.col-5-6 {
-  --width: 12;
-  padding: 10px;
-  -ms-flex-preferred-size: calc(var(--width, 0) / var(--columns, 12) * 100%);
-      flex-basis: calc(var(--width, 0) / var(--columns, 12) * 100%);
-}
-
-.col-1-1.bordered,
-.col-1-2.bordered,
-.col-1-3.bordered,
-.col-2-3.bordered,
-.col-1-4.bordered,
-.col-3-4.bordered,
-.col-1-5.bordered,
-.col-4-5.bordered,
-.col-1-6.bordered,
-.col-5-6.bordered {
-  border: 1px solid #d6cbdf;
-}
-
-.col-1-1.centered,
-.col-1-2.centered,
-.col-1-3.centered,
-.col-2-3.centered,
-.col-1-4.centered,
-.col-3-4.centered,
-.col-1-5.centered,
-.col-4-5.centered,
-.col-1-6.centered,
-.col-5-6.centered {
-  padding: 0;
-  margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media only screen {
+  .row {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: var(--flex-flow);
+            flex-flow: var(--flex-flow);
+    --columns: 12;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .col-1-1,
+  .col-1-2,
+  .col-1-3,
+  .col-2-3,
+  .col-1-4,
+  .col-3-4,
+  .col-1-5,
+  .col-4-5,
+  .col-1-6,
+  .col-5-6 {
+    --width: 12;
+    padding: 10px;
+    -ms-flex-preferred-size: calc(var(--width, 0) / var(--columns, 12) * 100%);
+        flex-basis: calc(var(--width, 0) / var(--columns, 12) * 100%);
+  }
+  .col-1-1.bordered,
+  .col-1-2.bordered,
+  .col-1-3.bordered,
+  .col-2-3.bordered,
+  .col-1-4.bordered,
+  .col-3-4.bordered,
+  .col-1-5.bordered,
+  .col-4-5.bordered,
+  .col-1-6.bordered,
+  .col-5-6.bordered {
+    border: 1px solid #d6cbdf;
+  }
+  .col-1-1.centered,
+  .col-1-2.centered,
+  .col-1-3.centered,
+  .col-2-3.centered,
+  .col-1-4.centered,
+  .col-3-4.centered,
+  .col-1-5.centered,
+  .col-4-5.centered,
+  .col-1-6.centered,
+  .col-5-6.centered {
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 /* Tablet screen sizes - grid system */
-@media screen and (min-width: 600px) and (max-width: 800px) {
+@media only screen and (min-width: 767px) {
   .col-5-6,
   .col-4-5,
   .col-1-5,
@@ -358,7 +354,7 @@ img.swagoo-img-thumbnail {
 }
 
 /* Desktop screen sizes - grid system */
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1000px) {
   .col-1-1 {
     --width: 12;
   }
@@ -486,7 +482,7 @@ div.swagoo-container {
 }
 
 /* Mobile first - grid system */
-@media only screen and (max-width: 600px) {
+@media only screen {
   .swagoo-show-inline-on-desktop,
   .swagoo-show-block-on-desktop,
   .swagoo-show-inline-block-on-desktop,
@@ -507,7 +503,7 @@ div.swagoo-container {
 }
 
 /* Tablet screen sizes - grid system */
-@media only screen and (min-width: 600px) and (max-width: 800px) {
+@media only screen and (min-width: 767px) {
   .swagoo-show-inline-on-desktop,
   .swagoo-show-block-on-desktop,
   .swagoo-show-inline-block-on-desktop,
@@ -528,7 +524,7 @@ div.swagoo-container {
 }
 
 /* Desktop screen sizes - grid system */
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1000px) {
   .swagoo-show-inline-on-tablet,
   .swagoo-show-block-on-tablet,
   .swagoo-show-inline-block-on-tablet,
