@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Swagoo Framework - Text</title>
+    <link rel="stylesheet" type=text/css href="../css/swagoo-theme.css">
+</head>
+<body>
+    
+
+    <nav class="swagoo-nav">
+        <input type="checkbox" id="burger"/><label for="burger" class="swagoo-burger"></label>
+        <ul class="swagoo-link-group">
+            <li class="swagoo-link"><a href="../index.html">Home</a></li>
+            <li class="swagoo-link active"><a href="./setup.html">Setup</a></li>
+            <li class="swagoo-link"><a href="./grid.html">Grid</a></li>
+            <li class="swagoo-link"><a href="./forms.html">Forms</a></li>
+            <li class="swagoo-link"><a href="./text.html">Text</a></li>
+            <li class="swagoo-link"><a href="./card.html">Card</a></li>
+            <li class="swagoo-link"><a href="./code.html">Code</a></li>
+            <li class="swagoo-link"><a href="./image.html">Image</a></li>
+            <li class="swagoo-link"><a href="./navigation.html">Nav</a></li>
+            <li class="swagoo-link"><a href="./board.html">Board</a></li>
+            <li class="swagoo-link"><a href="./misc.html">Misc</a></li>
+            <li class="swagoo-link"><a href="./display.html">Display</a></li>
+            <li class="swagoo-link"><a href="../sample/index.html">Sample</a></li>
+        </ul>
+    </nav>
+
+    <header class="swagoo-header">
+        <div class="swagoo-header-title">Swagoo Framework</div>
+        <div class="swagoo-header-subtitle">Mobile-First Responsive Design Framework With Pure CSS & Funky Swag</div>
+    </header>
+
+    <div class="swagoo-container">
+        
+        <div class="row">
+            <div class="col-1-1">
+                <h4>Setup Instructions</h4>
+                <h1>#1</h1>
+                <p>
+                    You need to download Swagoo. In order to do that please go to the <a href="https://github.com/AvetisG/Swagoo">GitHub page</a> and click on the
+                    <b>Clone or Download</b> green button at the top right corner.
+                </p>
+
+                <p>
+                    If you don't know how to use GIT then go ahead and click <b>Download ZIP</b> button. Otherwise if you have GIT setup and know how to use it - go ahead
+                    and run the following command to clone the remote repository down to your local drive. 
+                </p>
+
+<div class="swagoo-snippet">
+<pre>                    
+    <code>
+    git clone https://github.com/AvetisG/Swagoo.git
+    </code>
+</pre>
+</div>
+        </div>
+    </div>        
+            
+        <div class="row">
+            <div class="col-1-1">
+                <h1>#2</h1>
+                <p>
+                    Now you need to build the Framework to produce the CSS file which you can include in your project.
+                </p>
+
+                <p>
+                    There are many SASS compilers out there but our recoemmendaiton is to download/install <a href="https://code.visualstudio.com/">Visual Studio Code</a> and then go
+                    ahead and download an extension for Visual Studio Code called <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass">Live Sass Compiler</a>.
+                </p>
+
+                <p>
+                    Once everything is setup all you would need to do is open up Swagoo, navigate to scss folder and open swagoo-theme.scss.
+                </p>
+
+                <p>
+                    Once the file is open, go ahead and click on Watch Sass button at the bottom of Visual Studio Code editor. This will compile the SCSS into CSS file.
+                </p>
+
+                <p>
+                    Once you have swagoo-theme.css you can go ahead and include that in your project as follows (below code is assuming you have placed swagoo-theme.css in a folder called css):
+                </p>
+
+<div class="swagoo-snippet">
+<pre>                    
+    <code>
+    &#x3C;link rel=&#x22;stylesheet&#x22; type=text/css href=&#x22;./css/swagoo-theme.css&#x22;&#x3E;
+    </code>
+</pre>
+</div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1-1">
+                <h1>#3</h1>
+                <p>
+                    Now that you have all of the files setup and included we can learn how to customize the styles to match your needs.
+                </p>
+
+                <p>
+                    Recommended way is to create a sass file called site.sass (you can call it anything you want, our default name is site.sass).
+                </p>
+
+                <p>
+                    The rest is simple. All you need to do is re-declare existing variables from the list below and assign a new value to them. 
+                </p>
+                
+                <p>
+                    Once all of your variables have been declared go ahead and import swagoo-theme.scss at the very bottom. 
+                </p>
+
+                <p>
+                    You can look at the code below to help you get an idea.
+                </p>
+
+<div class="swagoo-snippet">
+<pre>                    
+    <code>
+    $swagoo-seed-color: rgb(144, 13, 245) !default;
+
+    @import &#x22;../scss/swagoo-theme.scss&#x22;;
+    </code>
+</pre>
+</div>
+            
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1-1">
+                <p>
+                    Below are all of the available display classes:
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1-3 bordered centered">
+                <label>.swagoo-show-inline-on-desktop</label>
+            </div>
+
+            <div class="col-2-3 bordered">
+                <p>
+                    Allows the element to be shown only on desktop as an inline element.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1-3 bordered centered">
+                <label>.swagoo-show-block-on-desktop</label>
+            </div>
+
+            <div class="col-2-3 bordered">
+                <p>
+                    Allows the element to be shown only on desktop as a block element.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1-3 bordered centered">
+                <label>.swagoo-show-inline-block-on-desktop</label>
+            </div>
+
+            <div class="col-2-3 bordered">
+                <p>
+                    Allows the element to be shown only on desktop as an inline-block element.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1-3 bordered centered">
+                <label>.swagoo-show-inline-on-tablet</label>
+            </div>
+
+            <div class="col-2-3 bordered">
+                <p>
+                    Allows the element to be shown only on tablet as an inline element.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1-3 bordered centered">
+                <label>.swagoo-show-block-on-tablet</label>
+            </div>
+
+            <div class="col-2-3 bordered">
+                <p>
+                    Allows the element to be shown only on tablet as a block element.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1-3 bordered centered">
+                <label>.swagoo-show-inline-block-on-tablet</label>
+            </div>
+
+            <div class="col-2-3 bordered">
+                <p>
+                    Allows the element to be shown only on tablet as an inline-block element.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1-3 bordered centered">
+                <label>.swagoo-show-inline-on-mobile</label>
+            </div>
+
+            <div class="col-2-3 bordered">
+                <p>
+                    Allows the element to be shown only on mobile as an inline element.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1-3 bordered centered">
+                <label>.swagoo-show-block-on-mobile</label>
+            </div>
+
+            <div class="col-2-3 bordered">
+                <p>
+                    Allows the element to be shown only on mobile as a block element.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-1-3 bordered centered">
+                <label>.swagoo-show-inline-block-on-mobile</label>
+            </div>
+
+            <div class="col-2-3 bordered">
+                <p>
+                    Allows the element to be shown only on mobile as an inline-block element.
+                </p>
+            </div>
+        </div>
+        
+    </div>
+
+    <footer class="swagoo-footer">
+        <p>Copyright © Swagoo Responsive Design Framework 2019 All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

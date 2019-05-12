@@ -1,7 +1,5 @@
-$phone-size: 600px !default;
-$tablet-size-start: 600px !default;
-$tablet-size-end: 800px !default;
-$desktop-size: 800px !default;
+$tablet-size: 767px !default;
+$desktop-size: 1000px !default;
 $augmented-fourth: 1.414; // Augmented Fourth;
 $major-third: 1.250; // When it is a phone change the scale to Major Third
 $flex-no-wrap: row nowrap;
