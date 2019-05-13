@@ -3,15 +3,15 @@ Mobile-First Responsive Design Framework With Pure CSS & Funky Swag.
 
 Setup Instructions
 
-#1
+## #1
 
 You need to download Swagoo. In order to do that please go to the GitHub page and click on the Clone or Download green button at the top right corner.
 
 If you don't know how to use GIT then go ahead and click Download ZIP button. Otherwise if you have GIT setup and know how to use it - go ahead and run the following command to clone the remote repository down to your local drive.
 
-git clone https://github.com/AvetisG/Swagoo.git
+`git clone https://github.com/AvetisG/Swagoo.git`
     
-#2
+## #2
 
 Now you need to build the Framework to produce the CSS file which you can include in your project.
 
@@ -23,9 +23,9 @@ Once the file is open, go ahead and click on Watch Sass button at the bottom of 
 
 Once you have swagoo-theme.css you can go ahead and include that in your project as follows (below code is assuming you have placed swagoo-theme.css in a folder called css):
 
-<link rel="stylesheet" type=text/css href="./css/swagoo-theme.css">
+`<link rel="stylesheet" type=text/css href="./css/swagoo-theme.css">`
     
-#3
+## #3
 
 Now that you have all of the files setup and included we can learn how to customize the styles to match your needs.
 
@@ -37,9 +37,11 @@ Once all of your variables have been declared go ahead and import swagoo-theme.s
 
 You can look at the code below to help you get an idea.
 
+```
 $swagoo-seed-color: rgb(144, 13, 245) !default;
 
 @import "../scss/swagoo-theme.scss";
+```
 
 Below are all of the available variables which you can override:
 
