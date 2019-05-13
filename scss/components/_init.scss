@@ -4,7 +4,7 @@
 
 :root {
     font-family: 'Serif', Fallback, serif;
-    font-size: 16px;
+    font-size: #{$root-element-font-size};
 
     --text-base-size: #{$base-size};
     --scale: #{$small-device-font-size};
@@ -20,7 +20,7 @@
 /* Mobile First */
 @media only screen  {
     :root {
-        font-size: 13px;
+        font-size: calc(#{$root-element-font-size} * .8);
 
         --scale: #{$small-device-font-size};
         --flex-flow: #{$flex-wrap};
@@ -31,7 +31,7 @@
 /* Desktop and Tablet screen size */
 @media only screen and (min-width: $tablet-size) , (min-width: $desktop-size) {
     :root {
-        font-size: 16px;
+        font-size: #{$root-element-font-size};
 
         --scale: #{$large-device-font-size};
         --flex-flow: #{$flex-no-wrap};

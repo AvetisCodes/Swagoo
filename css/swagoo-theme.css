@@ -24,7 +24,7 @@
 /* Mobile First */
 @media only screen {
   :root {
-    font-size: 13px;
+    font-size: calc(16px * .8);
     --scale: 1.25;
     --flex-flow: row wrap;
   }
