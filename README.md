@@ -43,6 +43,8 @@ $swagoo-seed-color: rgb(144, 13, 245) !default;
 
 Below are all of the available variables which you can override:
 
+| Variable Name   |      Description      |
+|----------|:-------------:|
 | $tablet-size: 767px !default; | You can override the media query breakpoint for tablet devices. |
 | $desktop-size: 1000px !default; | You can override the media query breakpoint for desktop devices. |
 | $large-device-font-size: 1.414 !default; | Current Typography scale for large devices (desktop, laptop) is set to Augmented Fourth but you can change the value. |
