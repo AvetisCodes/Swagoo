@@ -1,9 +1,9 @@
 # Swagoo
 Mobile-First Responsive Design Framework With Pure CSS & Funky Swag.
 
-Setup Instructions
+## Setup Instructions
 
-## #1
+### #1
 
 You need to download Swagoo. In order to do that please go to the GitHub page and click on the Clone or Download green button at the top right corner.
 
@@ -11,7 +11,7 @@ If you don't know how to use GIT then go ahead and click Download ZIP button. Ot
 
 `git clone https://github.com/AvetisG/Swagoo.git`
     
-## #2
+### #2
 
 Now you need to build the Framework to produce the CSS file which you can include in your project.
 
@@ -25,7 +25,7 @@ Once you have swagoo-theme.css you can go ahead and include that in your project
 
 `<link rel="stylesheet" type=text/css href="./css/swagoo-theme.css">`
     
-## #3
+### #3
 
 Now that you have all of the files setup and included we can learn how to customize the styles to match your needs.
 
