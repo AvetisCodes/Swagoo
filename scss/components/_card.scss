@@ -1,31 +1,31 @@
 div.swagoo-card {
     background-color: rgba($primary-neutral, 0.1);
-    border-radius: .5rem;
+    border-radius: $border-radius;
     
     div.swagoo-card-header {
         @extend h5;
 
-        padding: 10px;
+        padding: 1rem;
         text-transform: uppercase;
         color: $primary-neutral-dark;
         text-align: center;
     }
 
     div.swagoo-card-body {
-        padding: 10px;
+        padding: 1rem;
         color: $primary-neutral-dark;
         background-color: $white;
         font-family: 'Serif', Fallback, serif;
         text-align: center;
 
         &.rounded {
-            border-bottom-left-radius: .5rem;
-            border-bottom-right-radius: .5rem;
+            border-bottom-left-radius: $border-radius;
+            border-bottom-right-radius: $border-radius;
         }
     }
 
     div.swagoo-card-footer {
-        padding: 20px;
+        padding: 1rem;
         text-align: center;
     }
 }

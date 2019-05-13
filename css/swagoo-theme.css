@@ -10,6 +10,7 @@
 
 :root {
   font-family: 'Serif', Fallback, serif;
+  font-size: 16px;
   --text-base-size: 1rem;
   --scale: 1.25;
   --flex-flow: row wrap;
@@ -23,6 +24,7 @@
 /* Mobile First */
 @media only screen {
   :root {
+    font-size: 13px;
     --scale: 1.25;
     --flex-flow: row wrap;
   }
@@ -31,6 +33,7 @@
 /* Desktop and Tablet screen size */
 @media only screen and (min-width: 767px), (min-width: 1000px) {
   :root {
+    font-size: 16px;
     --scale: 1.414;
     --flex-flow: row nowrap;
   }
@@ -129,17 +132,17 @@ h5, header.swagoo-header div.swagoo-header-subtitle, div.swagoo-card div.swagoo-
   nav.swagoo-nav input[type=checkbox]:checked + label.swagoo-burger {
     cursor: pointer;
     display: inline-block;
-    padding: 0 10px;
+    padding: 0 .7rem;
   }
   nav.swagoo-nav input[type=checkbox] + label.swagoo-burger:before {
     content: '\00d7';
     color: #f9fafb;
-    font-size: 40px;
+    font-size: 2.5rem;
   }
   nav.swagoo-nav input[type=checkbox]:checked + label.swagoo-burger:before {
     content: '\2630';
     color: #f9fafb;
-    font-size: 35px;
+    font-size: 2.2rem;
   }
   nav.swagoo-nav input[type=checkbox]:checked ~ ul.swagoo-link-group {
     display: none;
@@ -196,7 +199,7 @@ h5, header.swagoo-header div.swagoo-header-subtitle, div.swagoo-card div.swagoo-
 input.swagoo-btn[type="button"],
 input.swagoo-btn[type="submit"],
 input.swagoo-btn[type="reset"] {
-  border-radius: .5rem;
+  border-radius: 8px;
   background-color: #3b7dc4;
   color: #f9fafb;
   border: 1px solid;
@@ -235,16 +238,16 @@ input[type="time"].swagoo-txt,
 input[type="url"].swagoo-txt,
 input[type="week"].swagoo-txt {
   font-family: 'Sans Serif';
+  border-radius: 8px;
+  width: 100%;
   background-color: #cbd3dd;
   border: 1px solid gray;
-  border-radius: 4px;
   height: 1.5rem;
-  width: 100%;
 }
 
 textarea.swagoo-txt {
   font-family: 'Sans Serif';
-  border-radius: 4px;
+  border-radius: 8px;
   width: 100%;
   background-color: #cbd3dd;
   border: 1px solid gray;
@@ -252,7 +255,7 @@ textarea.swagoo-txt {
 
 label {
   font-family: 'Sans Serif';
-  margin-right: 10px;
+  margin-right: .5rem;
 }
 
 img.swagoo-img {
@@ -261,9 +264,9 @@ img.swagoo-img {
 
 img.swagoo-img-thumbnail {
   border: 1px solid #cbd3dd;
-  border-radius: 4px;
-  padding: 5px;
-  width: 150px;
+  border-radius: 8px;
+  padding: .3rem;
+  width: 10rem;
 }
 
 .row {
@@ -296,7 +299,7 @@ img.swagoo-img-thumbnail {
   .col-1-6,
   .col-5-6 {
     --width: 12;
-    padding: 10px;
+    padding: .7rem;
     -ms-flex-preferred-size: calc(var(--width, 0) / var(--columns, 12) * 100%);
         flex-basis: calc(var(--width, 0) / var(--columns, 12) * 100%);
   }
@@ -398,18 +401,18 @@ img.swagoo-img-thumbnail {
 
 div.swagoo-card {
   background-color: rgba(101, 127, 154, 0.1);
-  border-radius: .5rem;
+  border-radius: 8px;
 }
 
 div.swagoo-card div.swagoo-card-header {
-  padding: 10px;
+  padding: 1rem;
   text-transform: uppercase;
   color: #222b34;
   text-align: center;
 }
 
 div.swagoo-card div.swagoo-card-body {
-  padding: 10px;
+  padding: 1rem;
   color: #222b34;
   background-color: #f9fafb;
   font-family: 'Serif', Fallback, serif;
@@ -417,18 +420,18 @@ div.swagoo-card div.swagoo-card-body {
 }
 
 div.swagoo-card div.swagoo-card-body.rounded {
-  border-bottom-left-radius: .5rem;
-  border-bottom-right-radius: .5rem;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 div.swagoo-card div.swagoo-card-footer {
-  padding: 20px;
+  padding: 1rem;
   text-align: center;
 }
 
 .swagoo-snippet {
-  padding: 10px;
-  border-radius: 5px;
+  padding: .5rem;
+  border-radius: 8px;
   background-color: gray;
 }
 
@@ -467,14 +470,14 @@ div.swagoo-board div.swagoo-board-title {
 }
 
 div.swagoo-board div.swagoo-board-subtitle {
-  margin: 20px;
+  margin: 1.5rem;
   color: #222b34;
   font-family: 'Serif', Fallback, serif;
 }
 
 div.swagoo-board div.swagoo-board-subtitle.rounded {
-  border-bottom-left-radius: .5rem;
-  border-bottom-right-radius: .5rem;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 div.swagoo-board div.swagoo-board-action {
@@ -483,9 +486,9 @@ div.swagoo-board div.swagoo-board-action {
 }
 
 hr {
-  height: 1px;
+  height: .1rem;
   border: none;
-  margin: 10px 0;
+  margin: .7rem 0;
   color: #cbd3dd;
   background-color: #cbd3dd;
 }

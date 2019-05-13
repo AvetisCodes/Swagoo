@@ -1,8 +1,6 @@
-//TODO: Figure out the margins
-//TODO: Look into units of measurmenets and figure out which one is better to be used
 div.swagoo-board {
 
-    border-radius: 8px;
+    border-radius: $border-radius;
 
     background-color: rgba($primary-neutral, 0.1);
     padding: 1rem;
@@ -19,18 +17,18 @@ div.swagoo-board {
     div.swagoo-board-subtitle {
         @extend h5;
 
-        margin: 20px;
+        margin: 1.5rem;
         color: $primary-neutral-dark;
         font-family: 'Serif', Fallback, serif;
 
         &.rounded {
-            border-bottom-left-radius: .5rem;
-            border-bottom-right-radius: .5rem;
+            border-bottom-left-radius: $border-radius;
+            border-bottom-right-radius: $border-radius;
         }
     }
 
     div.swagoo-board-action {
         border-top: 1px dotted $neutral-gray;
-        padding-top: 1rem; // TODO: Figure out how to make this point it towards the bottom instead of towards the top
+        padding-top: 1rem;
     }
 }

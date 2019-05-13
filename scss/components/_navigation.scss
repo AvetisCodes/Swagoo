@@ -48,19 +48,19 @@
         {
             cursor: pointer;
             display: inline-block;
-            padding: 0 10px;
+            padding: 0 .7rem;
         }
 
         input[type=checkbox] + label.swagoo-burger:before {
             content: '\00d7';
             color: $white;
-            font-size: 40px;
+            font-size: 2.5rem;
         }
 
         input[type=checkbox]:checked + label.swagoo-burger:before {
             content: '\2630';
             color: $white;
-            font-size: 35px;
+            font-size: 2.2rem;
         }
 
         input[type=checkbox]:checked ~ ul.swagoo-link-group {

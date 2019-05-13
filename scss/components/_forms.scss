@@ -1,5 +1,5 @@
 .btn {
-    border-radius: .5rem;
+    border-radius: $border-radius;
     background-color: $primary-color;
     color: $white;
     border: 1px solid;
@@ -47,16 +47,17 @@ input[type="time"].swagoo-txt,
 input[type="url"].swagoo-txt,
 input[type="week"].swagoo-txt {
     font-family: 'Sans Serif';
+    border-radius: $border-radius;
+    width: 100%;
     background-color: $primary-neutral-light;
     border: 1px solid $neutral-gray;
-    border-radius: 4px;
     height: 1.5rem;
-    width: 100%;
+    
 }
 
 textarea.swagoo-txt {
     font-family: 'Sans Serif';
-    border-radius: 4px;
+    border-radius: $border-radius;
     width: 100%;
     background-color: $primary-neutral-light;
     border: 1px solid $neutral-gray;
@@ -64,5 +65,5 @@ textarea.swagoo-txt {
 
 label {
     font-family: 'Sans Serif';
-    margin-right: 10px;
+    margin-right: .5rem;
 }
