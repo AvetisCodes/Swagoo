@@ -43,26 +43,11 @@ $swagoo-seed-color: rgb(144, 13, 245) !default;
 
 Below are all of the available variables which you can override:
 
-$tablet-size: 767px !default;
-You can override the media query breakpoint for tablet devices.
-
-$desktop-size: 1000px !default;
-You can override the media query breakpoint for desktop devices.
-
-$large-device-font-size: 1.414 !default;
-Current Typography scale for large devices (desktop, laptop) is set to Augmented Fourth but you can change the value.
-
-$small-device-font-size: 1.250 !default;
-Current Typography scale for small devices (tablet, mobile) is set to Major Third but you can change the value.
-
-$root-element-font-size: 16px !default;
-This is the root element font-size which you can override as well. In the mobile media query the font-size is automatically calculated to be equal to 80% of the $root-element-font-size.
-
-$serif-font-file: url([path towards font]) !default;
-You can replace the current serif font using the following variable.
-
-$sans-serif-file: url([path towards font]) !default;
-You can replace the current sans-serif font using the following variable.
-
-$swagoo-seed-color: hsla(211, 100%, 50%, 1) !default;
-You can override the theme seed color which will recalculate all of the primary, complementary and analogous colors.
+$tablet-size: 767px !default; | You can override the media query breakpoint for tablet devices.
+$desktop-size: 1000px !default; | You can override the media query breakpoint for desktop devices.
+$large-device-font-size: 1.414 !default; | Current Typography scale for large devices (desktop, laptop) is set to Augmented Fourth but you can change the value.
+$small-device-font-size: 1.250 !default; | Current Typography scale for small devices (tablet, mobile) is set to Major Third but you can change the value.
+$root-element-font-size: 16px !default; | This is the root element font-size which you can override as well. In the mobile media query the font-size is automatically calculated to be equal to 80% of the $root-element-font-size.
+$serif-font-file: url([path towards font]) !default; | You can replace the current serif font using the following variable.
+$sans-serif-file: url([path towards font]) !default; | You can replace the current sans-serif font using the following variable.
+$swagoo-seed-color: hsla(211, 100%, 50%, 1) !default; | You can override the theme seed color which will recalculate all of the primary, complementary and analogous colors.
