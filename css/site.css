@@ -8,12 +8,12 @@
 */
 @font-face {
   font-family: 'Serif';
-  src: url(../../fonts/BlackerText-Light.otf) format("opentype");
+  src: url(../fonts/BlackerText-Light.otf) format("opentype");
 }
 
 @font-face {
   font-family: 'Sans Serif';
-  src: url(../../fonts/Gilroy-Light.otf) format("opentype");
+  src: url(../fonts/Gilroy-Light.otf) format("opentype");
 }
 
 :root {
