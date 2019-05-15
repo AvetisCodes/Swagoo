@@ -28,6 +28,18 @@
   --text-h3-size: calc(var(--text-h4-size) * var(--scale));
   --text-h2-size: calc(var(--text-h3-size) * var(--scale));
   --text-h1-size: calc(var(--text-h2-size) * var(--scale));
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 /* Mobile First */
@@ -567,20 +579,6 @@ div.swagoo-container {
   .swagoo-show-inline-block-on-desktop {
     display: inline-block;
   }
-}
-
-html, body {
-  height: 100%;
-}
-
-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 footer.swagoo-footer {

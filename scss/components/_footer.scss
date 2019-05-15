@@ -1,12 +1,3 @@
-html, body {
-    height: 100%;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-}
-
 footer.swagoo-footer {
     flex-shrink: 0;
     background-color: $primary-neutral-dark;

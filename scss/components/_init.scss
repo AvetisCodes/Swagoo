@@ -16,6 +16,14 @@
     --text-h3-size: calc(var(--text-h4-size) * var(--scale));
     --text-h2-size: calc(var(--text-h3-size) * var(--scale));
     --text-h1-size: calc(var(--text-h2-size) * var(--scale));
+
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Mobile First */
