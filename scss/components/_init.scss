@@ -10,6 +10,7 @@
     --scale: #{$small-device-font-size};
     --flex-flow: #{$flex-wrap};
     
+    --small-text: calc(var(--text-base-size) / var(--scale));
     --text-h5-size: calc(var(--text-base-size) * var(--scale));
     --text-h4-size: calc(var(--text-h5-size) * var(--scale));
     --text-h3-size: calc(var(--text-h4-size) * var(--scale));
