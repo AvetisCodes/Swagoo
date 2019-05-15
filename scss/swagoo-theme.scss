@@ -1,4 +1,19 @@
+/*
+ 
+    Init needs to be inclided first since it provides variables
+    for the rest of the partial files imported after it.
+
+    After Init the oder does not matter.
+
+*/
+
+// Initial Import - Order matters
+// -------------------------
 @import "./components/init";
+// -------------------------
+
+// Rest of the Import - Order does not matter
+// -------------------------
 @import "./components/header";
 @import "./components/text";
 @import "./components/navigation";
@@ -12,3 +27,4 @@
 @import "./components/container";
 @import "./components/display";
 @import "./components/footer";
+// -------------------------

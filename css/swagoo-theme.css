@@ -1,3 +1,11 @@
+/*
+ 
+    Init needs to be inclided first since it provides variables
+    for the rest of the partial files imported after it.
+
+    After Init the oder does not matter.
+
+*/
 @font-face {
   font-family: 'Serif';
   src: url(../../fonts/BlackerText-Light.otf) format("opentype");
