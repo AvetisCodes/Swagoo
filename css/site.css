@@ -1,3 +1,11 @@
+/*
+ 
+    Init needs to be inclided first since it provides variables
+    for the rest of the partial files imported after it.
+
+    After Init the oder does not matter.
+
+*/
 @font-face {
   font-family: 'Serif';
   src: url(../../fonts/BlackerText-Light.otf) format("opentype");
@@ -268,6 +276,10 @@ img.swagoo-img-thumbnail {
   border-radius: 8px;
   padding: .3rem;
   width: 10rem;
+}
+
+figure {
+  margin: 3rem 0;
 }
 
 .row {

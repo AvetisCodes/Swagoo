@@ -278,6 +278,10 @@ img.swagoo-img-thumbnail {
   width: 10rem;
 }
 
+figure {
+  margin: 3rem 0;
+}
+
 .row {
   width: 100%;
   margin: 0;
