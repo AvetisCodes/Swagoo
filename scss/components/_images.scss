@@ -1,5 +1,17 @@
 img.swagoo-img {
     border-radius: $border-radius;
+
+    &.small {
+        width: 15rem;
+    }
+
+    &.medium {
+        width: 20rem;
+    }
+
+    &.large {
+        width: 25rem;
+    }
 }
 
 img.swagoo-img-thumbnail {

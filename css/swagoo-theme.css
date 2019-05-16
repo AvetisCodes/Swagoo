@@ -283,6 +283,18 @@ img.swagoo-img {
   border-radius: 8px;
 }
 
+img.swagoo-img.small {
+  width: 15rem;
+}
+
+img.swagoo-img.medium {
+  width: 20rem;
+}
+
+img.swagoo-img.large {
+  width: 25rem;
+}
+
 img.swagoo-img-thumbnail {
   border: 1px solid #c6c5d6;
   border-radius: 8px;
