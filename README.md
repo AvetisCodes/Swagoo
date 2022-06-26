@@ -1,8 +1,6 @@
 # Swagoo
 Mobile-First Responsive Design Framework With Pure CSS & Funky Swag.
 
-[Visit The Framework](https://www.avetisg.com/Projects/Swagoo/index.html)
-
 ## Setup Instructions
 
 ### #1
@@ -11,7 +9,7 @@ You need to download Swagoo. In order to do that please go to the GitHub page an
 
 If you don't know how to use GIT then go ahead and click Download ZIP button. Otherwise if you have GIT setup and know how to use it - go ahead and run the following command to clone the remote repository down to your local drive.
 
-`git clone https://github.com/AvetisG/Swagoo.git`
+`git clone https://github.com/AvetisCodes/Swagoo.git`
     
 ### #2
 
